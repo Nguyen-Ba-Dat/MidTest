@@ -5,7 +5,9 @@ const MovieList = ({ movies, onSelectMovie }) => {
   return (
     <div className="row">
       {movies.map((movie) => (
-        <MovieCard key={movie.id} movie={movie} onSelectMovie={onSelectMovie} />
+        <div className="col-md-2 mb-4" key={movie.id}>
+          <MovieCard movie={movie} onSelectMovie={onSelectMovie} />
+        </div>
       ))}
     </div>
   );
