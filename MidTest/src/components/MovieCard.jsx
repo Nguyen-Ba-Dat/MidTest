@@ -1,5 +1,5 @@
 import React from 'react';
-import './MovieCard.css'; // Đảm bảo bạn có file CSS để áp dụng các style
+import './MovieCard.css'; 
 
 const MovieCard = ({ movie, onSelectMovie }) => {
   return (
