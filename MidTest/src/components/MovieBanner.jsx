@@ -1,5 +1,5 @@
 import React from 'react';
-import './MovieBanner.css'; // Đảm bảo bạn có file CSS để áp dụng các style
+import './MovieBanner.css'; 
 
 const MovieBanner = ({ selectedMovie }) => {
   if (!selectedMovie) {
@@ -13,7 +13,7 @@ const MovieBanner = ({ selectedMovie }) => {
     height: '400px', 
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'flex-end', // Di chuyển nội dung xuống dưới
+    justifyContent: 'flex-end', 
     alignItems: 'center',
     color: 'white',
     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
