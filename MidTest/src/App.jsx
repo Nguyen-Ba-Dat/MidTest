@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 const App = () => {
-  const [selectedMovie, setSelectedMovie] = useState(null);
+  const [selectedMovie, setSelectedMovie] = useState(movieData[0  ]);
 
   const handleSelectMovie = (movie) => {
     setSelectedMovie(movie);
@@ -19,7 +19,7 @@ const App = () => {
       <div className="container">
         <header className="my-4 text-center">
           <h1>Explore</h1>
-          <p>What are you gonna watch today ?</p>
+          <h4><p>What are you gonna watch today ?</p></h4>
         </header>
         <section className="explore mb-5">
           <MovieBanner selectedMovie={selectedMovie} />

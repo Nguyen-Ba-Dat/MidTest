@@ -1,0 +1,14 @@
+banner {
+    backgroundImage: `url(${selectedMovie.image})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    height: '400px', 
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white',
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
+    borderRadius: '10px',
+    overflow: 'hidden',
+}
