@@ -1,8 +1,8 @@
 .movie-info {
-  background: rgba(0, 0, 0, 0.5); /* Nền mờ để dễ đọc chữ */
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: 20px;
-  border-radius: 0 0 10px 10px; /* Bo tròn góc dưới */
+  border-radius: 0 0 10px 10px; 
 }
 
 .card-title {
