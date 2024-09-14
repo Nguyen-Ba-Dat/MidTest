@@ -1,12 +1,13 @@
 import React from 'react';
+import './MovieCard.css'; // Đảm bảo bạn có file CSS để áp dụng các style
 
 const MovieCard = ({ movie, onSelectMovie }) => {
   return (
-    <div className="card h-100" onClick={() => onSelectMovie(movie)} style={{ cursor: 'pointer' }}>
-      <img src={movie.image} className="card-img-top" alt={movie.movieName} style={{ height: '253px', objectFit: 'cover' }} />
-      <div className="card-body">
-        <h5 className="card-title">{movie.movieName}</h5>
-        <p className="card-text">Episode {movie.episode}</p>
+    <div className="card h-100 movie-card" onClick={() => onSelectMovie(movie)} style={{ cursor: 'pointer' }}>
+      <img src={movie.image} className="card-img-bottom" alt={movie.movieName} />
+      <div className="card-body bg-black p-2 text-black bg-opacity-10">
+        <p className="card-text episode-text">Episode {movie.episode}</p>
+        <h5 className="card-title movie-title">{movie.movieName}</h5>
       </div>
     </div>
   );

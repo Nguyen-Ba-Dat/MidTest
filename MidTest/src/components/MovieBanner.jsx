@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './MovieBanner.css'; // Đảm bảo bạn có file CSS để áp dụng các style
 
 const MovieBanner = ({ selectedMovie }) => {
   if (!selectedMovie) {
@@ -13,7 +13,7 @@ const MovieBanner = ({ selectedMovie }) => {
     height: '400px', 
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'flex-end', // Di chuyển nội dung xuống dưới
     alignItems: 'center',
     color: 'white',
     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
@@ -22,8 +22,8 @@ const MovieBanner = ({ selectedMovie }) => {
   };
 
   return (
-    <div className="card mb-5" style={bannerStyle}> {/* Áp dụng bannerStyle vào đây */}
-      <div className="card-body text-center">
+    <div className="card mb-5" style={bannerStyle}>
+      <div className="card-body text-center movie-info">
         <h2 className="card-title">{selectedMovie.movieName}</h2>
         <p className="card-text">{selectedMovie.description}</p>
       </div>
