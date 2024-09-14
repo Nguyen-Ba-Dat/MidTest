@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 const App = () => {
-  const [selectedMovie, setSelectedMovie] = useState(movieData[0  ]);
+  const [selectedMovie, setSelectedMovie] = useState(movieData[0]);
 
   const handleSelectMovie = (movie) => {
     setSelectedMovie(movie);
